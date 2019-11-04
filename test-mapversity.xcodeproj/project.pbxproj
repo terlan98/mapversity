@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651286F02370ADAC004D8FC4 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651286EF2370ADAC004D8FC4 /* CustomTabBar.swift */; };
 		65847F1F2348B91200237D16 /* CampusOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65847F1E2348B91200237D16 /* CampusOverlay.swift */; };
 		65847F212348B98400237D16 /* CampusOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65847F202348B98400237D16 /* CampusOverlayView.swift */; };
 		65847F232348D64400237D16 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65847F222348D64400237D16 /* SearchView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		651286EF2370ADAC004D8FC4 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		65847F1E2348B91200237D16 /* CampusOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusOverlay.swift; sourceTree = "<group>"; };
 		65847F202348B98400237D16 /* CampusOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusOverlayView.swift; sourceTree = "<group>"; };
 		65847F222348D64400237D16 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				65847F202348B98400237D16 /* CampusOverlayView.swift */,
 				65847F222348D64400237D16 /* SearchView.swift */,
 				65847F242348E2EB00237D16 /* SearchBarView.swift */,
+				651286EF2370ADAC004D8FC4 /* CustomTabBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				65865D6F2343D37D0019A5A5 /* MapVC.swift in Sources */,
 				65847F1F2348B91200237D16 /* CampusOverlay.swift in Sources */,
 				65847F252348E2EB00237D16 /* SearchBarView.swift in Sources */,
+				651286F02370ADAC004D8FC4 /* CustomTabBar.swift in Sources */,
 				65865D6B2343D37D0019A5A5 /* AppDelegate.swift in Sources */,
 				65847F232348D64400237D16 /* SearchView.swift in Sources */,
 				65865D6D2343D37D0019A5A5 /* SceneDelegate.swift in Sources */,

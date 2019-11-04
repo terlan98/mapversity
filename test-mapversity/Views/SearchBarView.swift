@@ -24,6 +24,6 @@ class SearchBarView: UIView {
         layer.shadowOffset = CGSize(width: 0, height: 1)
         layer.shadowOpacity = 0.2
         
-        layer.cornerRadius = 5
+        layer.cornerRadius = 10
     }
 }
