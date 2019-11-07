@@ -150,9 +150,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GM6-cl-uQG">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GM6-cl-uQG">
                                 <rect key="frame" x="49" y="278" width="276" height="268"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick your location" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo4-ol-81J">
                                         <rect key="frame" x="67" y="33" width="206" height="21"/>
@@ -210,29 +209,39 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="Jai-1f-zKZ"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Mapversity " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6I6-Z7-qJ6">
-                                <rect key="frame" x="66" y="180" width="242" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Mapversity " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6I6-Z7-qJ6">
+                                <rect key="frame" x="66" y="180" width="242" height="81.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapversityLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BJl-lZ-QKm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapversityLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BJl-lZ-QKm">
                                 <rect key="frame" x="116" y="20" width="143" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="MFn-BD-2ZK"/>
+                                    <constraint firstAttribute="height" constant="129" id="Tbh-QK-O2f"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mapversity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POv-GH-E39">
-                                <rect key="frame" x="133" y="137" width="109" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mapversity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POv-GH-E39">
+                                <rect key="frame" x="133" y="136" width="109" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="Nz3-xT-5fj"/>
+                                    <constraint firstAttribute="height" constant="24" id="Om1-yW-ALy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BonvenoCF-Light" family="BonvenoCF" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.40392156862745099" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdn-le-Keh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdn-le-Keh">
                                 <rect key="frame" x="53" y="563" width="269" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.49631071090698242" blue="0.89082545042037964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="48c-tU-5JC"/>
+                                </constraints>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -240,31 +249,81 @@
                                     <action selector="nextBtnPressed:" destination="cwE-s4-YoG" eventType="touchUpInside" id="n8i-lc-zNQ"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFW-gF-ndk" customClass="ChooseUniView" customModule="test_mapversity" customModuleProvider="target">
-                                <rect key="frame" x="49" y="345" width="276" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFW-gF-ndk" customClass="ChooseUniView" customModule="test_mapversity" customModuleProvider="target">
+                                <rect key="frame" x="49.5" y="345" width="276" height="52"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your university" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8O-gE-4Zd">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your university" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8O-gE-4Zd">
                                         <rect key="frame" x="20" y="14" width="196" height="24"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.40392156862745099" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="9Gn-Id-MWh">
-                                        <rect key="frame" x="236" y="22" width="20" height="9"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="9Gn-Id-MWh">
+                                        <rect key="frame" x="236" y="12" width="26" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="26" id="koc-XG-aXf"/>
+                                        </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRl-or-n4l">
+                                        <rect key="frame" x="0.0" y="0.0" width="276" height="52"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chooseBtnPressed:" destination="cwE-s4-YoG" eventType="touchUpInside" id="P5M-M2-Jjw"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="R8O-gE-4Zd" secondAttribute="bottom" constant="14" id="9Zf-wh-7Vx"/>
+                                    <constraint firstItem="SRl-or-n4l" firstAttribute="leading" secondItem="mFW-gF-ndk" secondAttribute="leading" id="Hif-Zq-wV2"/>
+                                    <constraint firstItem="R8O-gE-4Zd" firstAttribute="top" secondItem="mFW-gF-ndk" secondAttribute="top" constant="14" id="LqW-It-DxM"/>
+                                    <constraint firstAttribute="bottom" secondItem="SRl-or-n4l" secondAttribute="bottom" id="PXN-Hf-lLP"/>
+                                    <constraint firstItem="9Gn-Id-MWh" firstAttribute="centerY" secondItem="mFW-gF-ndk" secondAttribute="centerY" id="QbY-tG-wqJ"/>
+                                    <constraint firstItem="SRl-or-n4l" firstAttribute="top" secondItem="mFW-gF-ndk" secondAttribute="top" id="SJP-QU-2z4"/>
+                                    <constraint firstAttribute="height" constant="52" id="Tdq-XI-Znq"/>
+                                    <constraint firstItem="R8O-gE-4Zd" firstAttribute="leading" secondItem="mFW-gF-ndk" secondAttribute="leading" constant="20" id="WgQ-Fa-UYv"/>
+                                    <constraint firstAttribute="trailing" secondItem="SRl-or-n4l" secondAttribute="trailing" id="WiW-CO-Se6"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Gn-Id-MWh" secondAttribute="trailing" constant="14" id="cxt-Qm-3Xn"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="label" destination="R8O-gE-4Zd" id="jvO-c1-V0P"/>
+                                    <outlet property="rightSideIcon" destination="9Gn-Id-MWh" id="xTq-WA-7bQ"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GM6-cl-uQG" firstAttribute="leading" secondItem="S8e-iP-NCS" secondAttribute="leading" constant="49" id="0hm-V0-fAo"/>
+                            <constraint firstItem="S8e-iP-NCS" firstAttribute="trailing" secondItem="Qdn-le-Keh" secondAttribute="trailing" constant="53" id="5uf-My-HxU"/>
+                            <constraint firstItem="GM6-cl-uQG" firstAttribute="top" secondItem="6I6-Z7-qJ6" secondAttribute="bottom" constant="16.5" id="BE3-If-L66"/>
+                            <constraint firstItem="6I6-Z7-qJ6" firstAttribute="leading" secondItem="S8e-iP-NCS" secondAttribute="leading" constant="66" id="Drl-J4-jLl"/>
+                            <constraint firstItem="mFW-gF-ndk" firstAttribute="leading" secondItem="S8e-iP-NCS" secondAttribute="leading" constant="49.5" id="Fcv-xl-LAN"/>
+                            <constraint firstItem="Qdn-le-Keh" firstAttribute="top" secondItem="GM6-cl-uQG" secondAttribute="bottom" constant="17" id="FwJ-jY-6LC"/>
+                            <constraint firstItem="S8e-iP-NCS" firstAttribute="trailing" secondItem="6I6-Z7-qJ6" secondAttribute="trailing" constant="67" id="Jxw-cJ-Abp"/>
+                            <constraint firstItem="S8e-iP-NCS" firstAttribute="trailing" secondItem="GM6-cl-uQG" secondAttribute="trailing" constant="50" id="Kle-tm-cQG"/>
+                            <constraint firstItem="Qdn-le-Keh" firstAttribute="leading" secondItem="S8e-iP-NCS" secondAttribute="leading" constant="53" id="PvX-KZ-D0z"/>
+                            <constraint firstItem="mFW-gF-ndk" firstAttribute="top" secondItem="6I6-Z7-qJ6" secondAttribute="bottom" constant="83.5" id="X2f-uL-2iN"/>
+                            <constraint firstItem="6I6-Z7-qJ6" firstAttribute="top" secondItem="POv-GH-E39" secondAttribute="bottom" constant="20" id="Xya-19-xNM"/>
+                            <constraint firstItem="S8e-iP-NCS" firstAttribute="trailing" secondItem="BJl-lZ-QKm" secondAttribute="trailing" constant="116" id="bNe-14-75h"/>
+                            <constraint firstItem="S8e-iP-NCS" firstAttribute="trailing" secondItem="POv-GH-E39" secondAttribute="trailing" constant="133" id="fr0-Wd-eC4"/>
+                            <constraint firstItem="POv-GH-E39" firstAttribute="leading" secondItem="S8e-iP-NCS" secondAttribute="leading" constant="133" id="gdz-1M-pEw"/>
+                            <constraint firstItem="BJl-lZ-QKm" firstAttribute="leading" secondItem="S8e-iP-NCS" secondAttribute="leading" constant="116" id="mNW-ws-qBU"/>
+                            <constraint firstItem="S8e-iP-NCS" firstAttribute="trailing" secondItem="mFW-gF-ndk" secondAttribute="trailing" constant="49.5" id="pmM-Q3-6i3"/>
+                            <constraint firstItem="BJl-lZ-QKm" firstAttribute="top" secondItem="S8e-iP-NCS" secondAttribute="top" constant="20" id="uCb-ai-EZ3"/>
+                            <constraint firstItem="POv-GH-E39" firstAttribute="top" secondItem="BJl-lZ-QKm" secondAttribute="bottom" constant="-13" id="vfj-K6-PB1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="S8e-iP-NCS"/>
                     </view>
                     <navigationItem key="navigationItem" id="uDM-kK-baq"/>
                     <connections>
                         <outlet property="chooseUniView" destination="mFW-gF-ndk" id="W9L-6Y-HOS"/>
+                        <outlet property="chooseUniViewLeadingConstraint" destination="Fcv-xl-LAN" id="xbT-ZR-DhU"/>
+                        <outlet property="chooseUniViewTrailingConstraint" destination="pmM-Q3-6i3" id="6OG-Zk-V2m"/>
                         <outlet property="infoView" destination="GM6-cl-uQG" id="oz0-Af-cbc"/>
                         <outlet property="logoImg" destination="BJl-lZ-QKm" id="s5q-VW-6ai"/>
                         <outlet property="mapversityLbl" destination="POv-GH-E39" id="W9G-0h-lMo"/>

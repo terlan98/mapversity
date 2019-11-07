@@ -10,6 +10,10 @@ import UIKit
 
 class ChooseUniView: UIView {
 
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var rightSideIcon: UIImageView!
+    
+    
     override func awakeFromNib() {
         customize()
     }
@@ -24,5 +28,13 @@ class ChooseUniView: UIView {
         layer.shadowOpacity = 0.2
         
         layer.cornerRadius = 10
+    }
+    
+    ///Performs necessary animations and changes to become active and ready to show what UIPickerView dictates
+    func becomeActive()
+    {
+        layer.cornerRadius = 10
+        label.text = "ADA"
+        rightSideIcon.image = #imageLiteral(resourceName: "greenTick")
     }
 }

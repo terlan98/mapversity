@@ -16,6 +16,10 @@ class WelcomeVC: UIViewController {
     @IBOutlet weak var logoImg: UIImageView!
     @IBOutlet weak var mapversityLbl: UILabel!
     @IBOutlet weak var chooseUniView: ChooseUniView!
+    @IBOutlet weak var chooseUniViewLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var chooseUniViewTrailingConstraint: NSLayoutConstraint!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,4 +59,17 @@ class WelcomeVC: UIViewController {
             self.chooseUniView.layer.opacity = 100
         }
     }
+    
+    @IBAction func chooseBtnPressed(_ sender: Any) {
+        
+        UIView.animate(withDuration: 0.3) {
+            self.chooseUniViewLeadingConstraint.constant = 0
+            self.chooseUniViewTrailingConstraint.constant = 0
+            self.chooseUniView.setNeedsLayout()
+            self.chooseUniView.layoutIfNeeded()
+        }
+        
+        self.chooseUniView.becomeActive()
+    }
+    
 }
