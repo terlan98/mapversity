@@ -35,7 +35,7 @@ class MapVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if(true)//DEBUG ONLY: Change it to false if you do not want to see the welcome screen
+        if(false)//DEBUG ONLY: Change it to false if you do not want to see the welcome screen
         {
             showOnboarding()
         }

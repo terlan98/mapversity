@@ -11,8 +11,9 @@ import UIKit
 class ChooseUniView: UIView {
 
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var rightSideIcon: UIImageView!
-    
+    @IBOutlet weak var rightSideBtn: UIButton!
+    @IBOutlet weak var invisibleBtn: UIButton!
+    @IBOutlet weak var rightSideBtnHeightContraint:NSLayoutConstraint!
     
     override func awakeFromNib() {
         customize()
@@ -34,7 +35,16 @@ class ChooseUniView: UIView {
     func becomeActive()
     {
         layer.cornerRadius = 10
-        label.text = "ADA"
-        rightSideIcon.image = #imageLiteral(resourceName: "greenTick")
+        label.font = label.font.withSize(15)
+       
+        invisibleBtn.isHidden = true
+        
+rightSideBtn.setImage(#imageLiteral(resourceName: "greenTick"), for: .normal)
+        rightSideBtnHeightContraint.constant = 15
+    }
+    
+    func selectUniversity(name: String)
+    {
+        label.text = name
     }
 }
