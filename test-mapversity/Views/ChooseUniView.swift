@@ -25,7 +25,7 @@ class ChooseUniView: UIView {
         
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowRadius = 3
-        layer.shadowOffset = CGSize(width: 0, height: 0)
+        layer.shadowOffset = .zero
         layer.shadowOpacity = 0.2
         
         layer.cornerRadius = 10

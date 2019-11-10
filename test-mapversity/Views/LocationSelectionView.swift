@@ -11,8 +11,7 @@ import UIKit
 class LocationSelectionView: UIView {
 
     override func awakeFromNib() {
-        
-            customize()
+        customize()
     }
         
     func customize() {
