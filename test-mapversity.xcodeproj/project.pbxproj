@@ -37,7 +37,7 @@
 		65847F1E2348B91200237D16 /* CampusOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusOverlay.swift; sourceTree = "<group>"; };
 		65847F202348B98400237D16 /* CampusOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusOverlayView.swift; sourceTree = "<group>"; };
 		65847F242348E2EB00237D16 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
-		65865D672343D37D0019A5A5 /* test-mapversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-mapversity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65865D672343D37D0019A5A5 /* Mapversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapversity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65865D6A2343D37D0019A5A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65865D6C2343D37D0019A5A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		65865D6E2343D37D0019A5A5 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		65865D682343D37D0019A5A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65865D672343D37D0019A5A5 /* test-mapversity.app */,
+				65865D672343D37D0019A5A5 /* Mapversity.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,7 +152,7 @@
 			);
 			name = "test-mapversity";
 			productName = "test-mapversity";
-			productReference = 65865D672343D37D0019A5A5 /* test-mapversity.app */;
+			productReference = 65865D672343D37D0019A5A5 /* Mapversity.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -372,9 +372,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tarlan.ismayilsoy.test-mapversity";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Mapversity;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -390,9 +390,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tarlan.ismayilsoy.test-mapversity";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Mapversity;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
