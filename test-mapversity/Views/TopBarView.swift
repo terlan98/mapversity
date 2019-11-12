@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LocationSelectionView: UIView {
+class TopBarView: UIView {
 
     override func awakeFromNib() {
         customize()
