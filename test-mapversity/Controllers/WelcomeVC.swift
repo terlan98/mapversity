@@ -20,7 +20,6 @@ class WelcomeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
     @IBOutlet weak var chooseUniViewTrailingConstraint: NSLayoutConstraint!
     @IBOutlet weak var uniPickerView: UIPickerView!
     
-    var universities = ["ADA University", "Azerbaijan State Oil and Industry University", "Azerbaijan State University of Economics", "Baku Engineering University", "Baku Higher Oil School"]//For debugging only
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,14 +90,14 @@ class WelcomeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return universities.count
+        return DataService.instance.getUniversities().count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return universities[row]
+        return DataService.instance.getUniversities()[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        chooseUniView.selectUniversity(name: universities[row])
+        chooseUniView.selectUniversity(name: DataService.instance.getUniversities()[row])
     }
 }

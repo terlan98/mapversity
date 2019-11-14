@@ -20,15 +20,7 @@ class LocationCell: UITableViewCell {
     
     func customize()
     {
-        backView.layer.masksToBounds = false
-        
-        backView.layer.shadowColor = UIColor.black.cgColor
-        backView.layer.shadowRadius = 2
-        backView.layer.shadowOffset = .zero
-        backView.layer.shadowOpacity = 0.2
-        
-        backView.layer.cornerRadius = 7
-        
+        backView.applyShadowAndRounding(shadowRadius: 2, shadowOffset: .zero, shadowOpacity: 0.2, cornerRadius: 7)
     }
     
     func updateView(location: String)

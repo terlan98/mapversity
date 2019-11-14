@@ -11,18 +11,10 @@ import UIKit
 class SearchBarView: UIView {
 
     override func awakeFromNib() {
-        
         customize()
     }
     
     func customize() {
-        
-        layer.masksToBounds = false
-        
-        layer.shadowRadius = 2
-        layer.shadowOffset = CGSize(width: 0, height: 1)
-        layer.shadowOpacity = 0.2
-        
-        layer.cornerRadius = 10
+        applyShadowAndRounding(shadowRadius: 2, shadowOffset: CGSize(width: 0, height: 1), shadowOpacity: 0.2, cornerRadius: 10)
     }
 }

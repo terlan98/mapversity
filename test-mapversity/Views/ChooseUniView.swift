@@ -21,14 +21,7 @@ class ChooseUniView: UIView {
 
     func customize()
     {
-        layer.masksToBounds = false
-        
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowRadius = 3
-        layer.shadowOffset = .zero
-        layer.shadowOpacity = 0.2
-        
-        layer.cornerRadius = 10
+        applyShadowAndRounding(shadowRadius: 3, shadowOffset: .zero, shadowOpacity: 0.2, cornerRadius: 10)
     }
     
     ///Performs necessary animations and changes to become active and ready to show what UIPickerView dictates
@@ -39,7 +32,7 @@ class ChooseUniView: UIView {
        
         invisibleBtn.isHidden = true
         
-rightSideBtn.setImage(#imageLiteral(resourceName: "greenTick"), for: .normal)
+        rightSideBtn.setImage(#imageLiteral(resourceName: "greenTick"), for: .normal)
         rightSideBtnHeightContraint.constant = 15
     }
     

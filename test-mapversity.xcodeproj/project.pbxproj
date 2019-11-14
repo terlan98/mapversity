@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6501B094237B459800D26793 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501B093237B459800D26793 /* EventController.swift */; };
+		6501B094237B459800D26793 /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501B093237B459800D26793 /* EventVC.swift */; };
 		651286F02370ADAC004D8FC4 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651286EF2370ADAC004D8FC4 /* CustomTabBar.swift */; };
 		6530EA892375FBCF00DA28F2 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6530EA882375FBCF00DA28F2 /* TopBarView.swift */; };
 		653A6B66237351E200C567CD /* ChooseUniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A6B65237351E200C567CD /* ChooseUniView.swift */; };
@@ -26,10 +26,15 @@
 		65A7A89C2378499F00C66DE9 /* LocationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A7A89B2378499F00C66DE9 /* LocationTextField.swift */; };
 		65A7A8A0237853D200C66DE9 /* LocationSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A7A89F237853D200C66DE9 /* LocationSelectionVC.swift */; };
 		65A7A8A223785E3B00C66DE9 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A7A8A123785E3B00C66DE9 /* LocationCell.swift */; };
+		65BA0C35237DCD6300C9890F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA0C34237DCD6300C9890F /* DataService.swift */; };
+		65BA0C37237DCF2100C9890F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA0C36237DCF2100C9890F /* Event.swift */; };
+		65BA0C39237DD6D200C9890F /* BlurryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA0C38237DD6D200C9890F /* BlurryView.swift */; };
+		65DFC2C0237DC24600249220 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DFC2BF237DC24600249220 /* EventCell.swift */; };
+		65DFC2C4237DC33A00249220 /* ShadowedRoundedUIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DFC2C3237DC33A00249220 /* ShadowedRoundedUIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6501B093237B459800D26793 /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
+		6501B093237B459800D26793 /* EventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
 		651286EF2370ADAC004D8FC4 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		6530EA882375FBCF00DA28F2 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 		653A6B65237351E200C567CD /* ChooseUniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseUniView.swift; sourceTree = "<group>"; };
@@ -50,6 +55,11 @@
 		65A7A89B2378499F00C66DE9 /* LocationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTextField.swift; sourceTree = "<group>"; };
 		65A7A89F237853D200C66DE9 /* LocationSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectionVC.swift; sourceTree = "<group>"; };
 		65A7A8A123785E3B00C66DE9 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		65BA0C34237DCD6300C9890F /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		65BA0C36237DCF2100C9890F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		65BA0C38237DD6D200C9890F /* BlurryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurryView.swift; sourceTree = "<group>"; };
+		65DFC2BF237DC24600249220 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		65DFC2C3237DC33A00249220 /* ShadowedRoundedUIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowedRoundedUIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +88,7 @@
 				655B65AA237343ED001929B9 /* TabBarVC.swift */,
 				655B65AC23734504001929B9 /* WelcomeVC.swift */,
 				65A7A89F237853D200C66DE9 /* LocationSelectionVC.swift */,
-				6501B093237B459800D26793 /* EventController.swift */,
+				6501B093237B459800D26793 /* EventVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -86,6 +96,8 @@
 		656EC07623488AEE00E63A40 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				65BA0C34237DCD6300C9890F /* DataService.swift */,
+				65BA0C36237DCF2100C9890F /* Event.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -93,6 +105,7 @@
 		656EC07723488AF700E63A40 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				65DFC2C5237DC53B00249220 /* Extensions */,
 				65847F1E2348B91200237D16 /* CampusOverlay.swift */,
 				65847F202348B98400237D16 /* CampusOverlayView.swift */,
 				65847F242348E2EB00237D16 /* SearchBarView.swift */,
@@ -101,6 +114,8 @@
 				6530EA882375FBCF00DA28F2 /* TopBarView.swift */,
 				65A7A89B2378499F00C66DE9 /* LocationTextField.swift */,
 				65A7A8A123785E3B00C66DE9 /* LocationCell.swift */,
+				65DFC2BF237DC24600249220 /* EventCell.swift */,
+				65BA0C38237DD6D200C9890F /* BlurryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +151,14 @@
 				655B65AE237349C5001929B9 /* fonts */,
 			);
 			path = "test-mapversity";
+			sourceTree = "<group>";
+		};
+		65DFC2C5237DC53B00249220 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				65DFC2C3237DC33A00249220 /* ShadowedRoundedUIViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,16 +235,21 @@
 			files = (
 				65847F212348B98400237D16 /* CampusOverlayView.swift in Sources */,
 				65A7A8A0237853D200C66DE9 /* LocationSelectionVC.swift in Sources */,
-				6501B094237B459800D26793 /* EventController.swift in Sources */,
+				65BA0C39237DD6D200C9890F /* BlurryView.swift in Sources */,
+				6501B094237B459800D26793 /* EventVC.swift in Sources */,
 				655B65AD23734504001929B9 /* WelcomeVC.swift in Sources */,
 				65865D6F2343D37D0019A5A5 /* MapVC.swift in Sources */,
 				65A7A8A223785E3B00C66DE9 /* LocationCell.swift in Sources */,
+				65BA0C37237DCF2100C9890F /* Event.swift in Sources */,
 				653A6B66237351E200C567CD /* ChooseUniView.swift in Sources */,
+				65DFC2C4237DC33A00249220 /* ShadowedRoundedUIViewExtension.swift in Sources */,
 				65847F1F2348B91200237D16 /* CampusOverlay.swift in Sources */,
+				65BA0C35237DCD6300C9890F /* DataService.swift in Sources */,
 				6530EA892375FBCF00DA28F2 /* TopBarView.swift in Sources */,
 				65847F252348E2EB00237D16 /* SearchBarView.swift in Sources */,
 				655B65AB237343ED001929B9 /* TabBarVC.swift in Sources */,
 				65A7A89C2378499F00C66DE9 /* LocationTextField.swift in Sources */,
+				65DFC2C0237DC24600249220 /* EventCell.swift in Sources */,
 				651286F02370ADAC004D8FC4 /* CustomTabBar.swift in Sources */,
 				65865D6B2343D37D0019A5A5 /* AppDelegate.swift in Sources */,
 				65865D6D2343D37D0019A5A5 /* SceneDelegate.swift in Sources */,
