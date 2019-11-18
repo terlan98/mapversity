@@ -28,7 +28,7 @@ class WelcomeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
         uniPickerView.delegate = self
         
         self.isModalInPresentation = true //ensures that user cannot dismiss this VC by swiping down
-}
+    }
     
     
     @IBAction func nextBtnPressed(_ sender: Any) {
@@ -42,6 +42,13 @@ class WelcomeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
         infoView.isHidden = true
         welcomeTitleLabel.isHidden = true
         nextBtn.isHidden = true
+    }
+    
+    ///Selects the first row of the UIPickerView
+    func initPickerView(pickerView: UIPickerView)
+    {
+        pickerView.selectRow(0, inComponent: 0, animated: false)
+        pickerView.delegate!.pickerView?(uniPickerView, didSelectRow: 0, inComponent: 0)
     }
     
     ///Performs animations that are necessary to switch to the university choosing mode.
@@ -66,18 +73,15 @@ class WelcomeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
         uniPickerView.layer.opacity = 0
         
         UIView.animate(withDuration: 0.3) {
-            self.chooseUniViewLeadingConstraint.constant = 0
-            self.chooseUniViewTrailingConstraint.constant = 0
-            self.chooseUniView.setNeedsLayout()
-            self.chooseUniView.layoutIfNeeded()
-            
             self.uniPickerView.layer.opacity = 100
         }
+
+        initPickerView(pickerView: uniPickerView)
         
         self.chooseUniView.becomeActive()
     }
     
-    ///This is for the case when the user has already tapped on chooseUniView once, selected a university and wants to confirm the seleection
+    ///This is for the case when the user has already tapped on chooseUniView once, selected a university and wants to confirm the selection
     @IBAction func rightSideBtnPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }

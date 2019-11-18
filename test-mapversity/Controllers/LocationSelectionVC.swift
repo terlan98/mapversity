@@ -10,16 +10,15 @@ import UIKit
 
 class LocationSelectionVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
-    @IBOutlet weak var currentLocationTxtField: LocationTextField!
-    @IBOutlet weak var destinationTxtField: LocationTextField!
-    @IBOutlet weak var locationTableView: UITableView!
-    
-    enum State: String
-    {
+    enum State: String {
         case idle //user has not activated any txt field
         case currentLocation //user has activated currentLocationTxtField
         case destination //user has activated destinationTxtField
     }
+    
+    @IBOutlet weak var currentLocationTxtField: LocationTextField!
+    @IBOutlet weak var destinationTxtField: LocationTextField!
+    @IBOutlet weak var locationTableView: UITableView!
     
     var currentState: State = .idle //keeps track of which txt field is active (if any)
     var locations = ["Lobby A","A101","A102","A103","A104","A105","A201","A202","A203"]

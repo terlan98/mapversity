@@ -26,6 +26,13 @@ class EventCell: UITableViewCell {
         backView.applyShadowAndRounding(shadowRadius: 2, shadowOffset: CGSize(width: 0, height: 1), shadowOpacity: 0.3, cornerRadius: 10)
     }
     
+    ///Assigns a single space character to the text fields containing no text. This is required to prevent the labels from disappearing due to empty text.
+    func handleEmptyText () {
+        if(nameLabel.text?.count == 0) {nameLabel.text = " "}
+        if(timeLabel.text?.count == 0) {timeLabel.text = " "}
+        if(locationLabel.text?.count == 0) {locationLabel.text = " "}
+    }
+    
     ///Updates the view according to the given Event instance
     func updateView(event: Event)
     {
@@ -33,12 +40,12 @@ class EventCell: UITableViewCell {
         timeLabel.text = event.time
         locationLabel.text = event.location
         
+        handleEmptyText()
+        
         midView.backgroundColor = DataService.instance.getRandomColor()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
     }
-
 }

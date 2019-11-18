@@ -12,12 +12,12 @@ import UIKit
 extension UIView {
 
     ///Applies shadow and rounded corner effect to the UIView.
-    func applyShadowAndRounding(shadowRadius: CGFloat, shadowOffset: CGSize, shadowOpacity: Float, cornerRadius: CGFloat) {
+    func applyShadowAndRounding(shadowColor: CGColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), shadowRadius: CGFloat, shadowOffset: CGSize, shadowOpacity: Float, cornerRadius: CGFloat) {
         layer.masksToBounds = false
         
         layer.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         
-        layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        layer.shadowColor = shadowColor
         layer.shadowRadius = shadowRadius
         layer.shadowOffset = shadowOffset
         layer.shadowOpacity = shadowOpacity

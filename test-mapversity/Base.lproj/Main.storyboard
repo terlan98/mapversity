@@ -97,31 +97,35 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I19-OH-M3e">
                                 <rect key="frame" x="0.0" y="81" width="375" height="286"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Lle-AZ-YjH">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Lle-AZ-YjH">
                                         <rect key="frame" x="62.5" y="20" width="250" height="200"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5t3-ow-zcZ">
-                                                <rect key="frame" x="86" y="0.0" width="78" height="31.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5t3-ow-zcZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="31.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8JI-ZK-3O5">
-                                                <rect key="frame" x="89" y="56.5" width="72" height="31"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8JI-ZK-3O5">
+                                                <rect key="frame" x="0.0" y="56.5" width="250" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Place" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZTT-0E-vqb">
-                                                <rect key="frame" x="87.5" y="112.5" width="75.5" height="31.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Place" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZTT-0E-vqb">
+                                                <rect key="frame" x="0.0" y="112.5" width="250" height="31.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Notes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="if6-5h-c3m">
-                                                <rect key="frame" x="106" y="169" width="38.5" height="31"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Notes" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="if6-5h-c3m">
+                                                <rect key="frame" x="0.0" y="169" width="250" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="5t3-ow-zcZ" firstAttribute="width" secondItem="Lle-AZ-YjH" secondAttribute="width" id="9EI-Me-DWH"/>
+                                            <constraint firstItem="if6-5h-c3m" firstAttribute="width" secondItem="Lle-AZ-YjH" secondAttribute="width" id="9UE-Bc-HRV"/>
+                                            <constraint firstItem="8JI-ZK-3O5" firstAttribute="width" secondItem="Lle-AZ-YjH" secondAttribute="width" id="DaT-vK-xap"/>
+                                            <constraint firstItem="ZTT-0E-vqb" firstAttribute="width" secondItem="Lle-AZ-YjH" secondAttribute="width" id="HOp-Nh-opb"/>
                                             <constraint firstAttribute="width" constant="250" id="Qa3-ja-OST"/>
                                             <constraint firstAttribute="height" constant="200" id="Qjm-af-SHw"/>
                                         </constraints>
@@ -143,11 +147,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blo-6c-x7G">
-                                        <rect key="frame" x="323" y="36" width="32" height="32"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blo-6c-x7G">
+                                        <rect key="frame" x="325" y="36" width="30" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="JK3-Wd-8Zf"/>
-                                            <constraint firstAttribute="width" constant="32" id="yE1-0d-8EK"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="+">
@@ -157,14 +160,29 @@
                                             <action selector="plusBtnPressed:" destination="5DX-F3-Zjf" eventType="touchUpInside" id="b0O-Yy-rZo"/>
                                         </connections>
                                     </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJ2-T9-Bft">
+                                        <rect key="frame" x="20" y="36" width="66" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="D5L-hS-YvC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="CANCEL">
+                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelBtnPressed:" destination="5DX-F3-Zjf" eventType="touchUpInside" id="syN-g7-wEG"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="blo-6c-x7G" firstAttribute="centerY" secondItem="cgP-XK-oK1" secondAttribute="centerY" id="6CK-ao-lgK"/>
+                                    <constraint firstItem="LJ2-T9-Bft" firstAttribute="centerY" secondItem="cgP-XK-oK1" secondAttribute="centerY" id="NLm-7L-jmc"/>
                                     <constraint firstItem="cgP-XK-oK1" firstAttribute="top" secondItem="kQ9-5W-dQ2" secondAttribute="top" constant="41" id="UmG-Kd-xgG"/>
                                     <constraint firstAttribute="trailing" secondItem="blo-6c-x7G" secondAttribute="trailing" constant="20" id="VY9-Wj-bo4"/>
                                     <constraint firstItem="cgP-XK-oK1" firstAttribute="centerX" secondItem="kQ9-5W-dQ2" secondAttribute="centerX" id="rkY-SY-krK"/>
                                     <constraint firstAttribute="height" constant="81" id="u1h-Na-bc4"/>
+                                    <constraint firstItem="LJ2-T9-Bft" firstAttribute="leading" secondItem="kQ9-5W-dQ2" secondAttribute="leading" constant="20" id="zsB-26-P3t"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -193,8 +211,13 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="blurView" destination="KiA-LD-ezY" id="ziP-ym-Ozs"/>
+                        <outlet property="cancelBtn" destination="LJ2-T9-Bft" id="vbQ-Uo-PUa"/>
                         <outlet property="eventTableView" destination="gDU-AW-bRt" id="e5U-UY-wDc"/>
+                        <outlet property="nameTxtField" destination="5t3-ow-zcZ" id="OY1-dt-MHi"/>
                         <outlet property="newEventView" destination="I19-OH-M3e" id="Ap1-WL-5AX"/>
+                        <outlet property="noteTxtField" destination="if6-5h-c3m" id="p8u-5C-vF9"/>
+                        <outlet property="placeTxtField" destination="ZTT-0E-vqb" id="EcO-dr-kbx"/>
+                        <outlet property="timeTxtField" destination="8JI-ZK-3O5" id="lLS-MT-Agx"/>
                         <outlet property="upperRightBtn" destination="blo-6c-x7G" id="XUQ-JZ-gYX"/>
                     </connections>
                 </viewController>
@@ -431,6 +454,9 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your university" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8O-gE-4Zd">
                                         <rect key="frame" x="20" y="14" width="196" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="196" id="p25-Mq-cuT"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.40392156862745099" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -525,7 +551,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9E-kW-3ce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1964" y="590.55472263868069"/>
+            <point key="canvasLocation" x="-1966" y="591"/>
         </scene>
         <!--Location SelectionVC-->
         <scene sceneID="FFp-vM-0AJ">
@@ -679,7 +705,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9M-cz-mgB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-810.39999999999998" y="590.55472263868069"/>
+            <point key="canvasLocation" x="-745" y="591"/>
         </scene>
     </scenes>
     <resources>

@@ -14,6 +14,7 @@
 		655B65AB237343ED001929B9 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655B65AA237343ED001929B9 /* TabBarVC.swift */; };
 		655B65AD23734504001929B9 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655B65AC23734504001929B9 /* WelcomeVC.swift */; };
 		655B65B0237349F9001929B9 /* BonvenoCF-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 655B65AF237349F9001929B9 /* BonvenoCF-Light.otf */; };
+		65663F2D238314750055055D /* EventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65663F2C238314750055055D /* EventsManager.swift */; };
 		65847F1F2348B91200237D16 /* CampusOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65847F1E2348B91200237D16 /* CampusOverlay.swift */; };
 		65847F212348B98400237D16 /* CampusOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65847F202348B98400237D16 /* CampusOverlayView.swift */; };
 		65847F252348E2EB00237D16 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65847F242348E2EB00237D16 /* SearchBarView.swift */; };
@@ -41,6 +42,7 @@
 		655B65AA237343ED001929B9 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		655B65AC23734504001929B9 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		655B65AF237349F9001929B9 /* BonvenoCF-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BonvenoCF-Light.otf"; sourceTree = "<group>"; };
+		65663F2C238314750055055D /* EventsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsManager.swift; sourceTree = "<group>"; };
 		65847F1E2348B91200237D16 /* CampusOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusOverlay.swift; sourceTree = "<group>"; };
 		65847F202348B98400237D16 /* CampusOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusOverlayView.swift; sourceTree = "<group>"; };
 		65847F242348E2EB00237D16 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				65BA0C34237DCD6300C9890F /* DataService.swift */,
 				65BA0C36237DCF2100C9890F /* Event.swift */,
+				65663F2C238314750055055D /* EventsManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				6530EA892375FBCF00DA28F2 /* TopBarView.swift in Sources */,
 				65847F252348E2EB00237D16 /* SearchBarView.swift in Sources */,
 				655B65AB237343ED001929B9 /* TabBarVC.swift in Sources */,
+				65663F2D238314750055055D /* EventsManager.swift in Sources */,
 				65A7A89C2378499F00C66DE9 /* LocationTextField.swift in Sources */,
 				65DFC2C0237DC24600249220 /* EventCell.swift in Sources */,
 				651286F02370ADAC004D8FC4 /* CustomTabBar.swift in Sources */,

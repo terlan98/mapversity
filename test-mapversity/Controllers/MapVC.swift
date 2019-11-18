@@ -13,6 +13,8 @@ class MapVC: UIViewController {
 
     @IBOutlet weak var myMap: MKMapView!
     
+    var welcomeVCShown = false
+    
     let initialLocation = CLLocation(latitude: 11.360717, longitude: -176.680205)
     
     var initialLocationCL: CLLocationCoordinate2D { // this variable is a copy of initialLocation. The only difference is class.
@@ -38,6 +40,7 @@ class MapVC: UIViewController {
         if(false)//DEBUG ONLY: Change it to false if you do not want to see the welcome screen
         {
             showOnboarding()
+            welcomeVCShown = true
         }
     }
     
