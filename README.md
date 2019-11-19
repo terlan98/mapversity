@@ -1,4 +1,6 @@
-﻿# Welcome to Mapversity!
+# Welcome to Mapversity!
+
+<img align="right" width="64" height="64" src="https://i.imgur.com/32tXwOn.png">
 
 Mapversity is a mobile app designed to guide students in the university to their lecture rooms, food courts, faculty offices in the shortest time possible. 
 
@@ -18,7 +20,6 @@ This application is created as a part of the "Introduction to Software Engineeri
 - **Stop navigation** - If you change your mind, you will be able to stop your guidance and choose another destination
 - **Log in to learning management systems** - You will be able to log in to your learning management system such as, Blackboard, Unibook etc. 
 - **Report bugs** – You will have a chance to report any bugs that you notice in the app.
-
 
 
 
