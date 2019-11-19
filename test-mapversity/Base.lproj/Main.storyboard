@@ -232,7 +232,42 @@
                     <view key="view" contentMode="scaleToFill" id="qIO-AJ-7jy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="builder" translatesAutoresizingMaskIntoConstraints="NO" id="11O-6B-NaA">
+                                <rect key="frame" x="284" y="214.5" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Fkv-Ab-vAH"/>
+                                    <constraint firstAttribute="width" constant="75" id="s1Q-pp-gPi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will soon be able to access your Learning Management System here. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfP-Gb-0Ft">
+                                <rect key="frame" x="16" y="303.5" width="273" height="64.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="273" id="omk-jE-g1v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are working on it" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spS-aM-Omz">
+                                <rect key="frame" x="16" y="210" width="240" height="83.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Qyd-Ke-WEE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.49803921568627452" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3ye-IB-4OC" firstAttribute="trailing" secondItem="11O-6B-NaA" secondAttribute="trailing" constant="16" id="HMg-dn-sRL"/>
+                            <constraint firstItem="spS-aM-Omz" firstAttribute="top" secondItem="3ye-IB-4OC" secondAttribute="top" constant="210" id="Qkr-ax-oyo"/>
+                            <constraint firstItem="TfP-Gb-0Ft" firstAttribute="top" secondItem="spS-aM-Omz" secondAttribute="bottom" constant="10" id="Z1X-ju-kjY"/>
+                            <constraint firstItem="11O-6B-NaA" firstAttribute="centerY" secondItem="spS-aM-Omz" secondAttribute="centerY" id="mWz-bY-r9m"/>
+                            <constraint firstItem="spS-aM-Omz" firstAttribute="leading" secondItem="3ye-IB-4OC" secondAttribute="leading" constant="16" id="n43-zx-GwD"/>
+                            <constraint firstItem="TfP-Gb-0Ft" firstAttribute="leading" secondItem="spS-aM-Omz" secondAttribute="leading" id="q4O-XE-ryP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3ye-IB-4OC"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Study" image="hat" id="X4r-u2-k71">
@@ -241,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebV-C7-dB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-34" y="-282"/>
+            <point key="canvasLocation" x="-34.399999999999999" y="-282.00899550224892"/>
         </scene>
         <!--Tab BarVC-->
         <scene sceneID="meQ-CZ-bLB">
@@ -433,7 +468,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdn-le-Keh">
                                 <rect key="frame" x="53" y="563" width="269" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.49631071090698242" blue="0.89082545042037964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.49803921568627452" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="48c-tU-5JC"/>
                                 </constraints>
@@ -709,6 +744,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="builder" width="512" height="512"/>
         <image name="calendar1" width="30" height="33"/>
         <image name="destIcon" width="130" height="130"/>
         <image name="downArrow" width="62" height="28"/>
