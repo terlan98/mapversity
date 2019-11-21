@@ -30,12 +30,6 @@ class WelcomeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
         self.isModalInPresentation = true //ensures that user cannot dismiss this VC by swiping down
     }
     
-    
-    @IBAction func nextBtnPressed(_ sender: Any) {
-        hideWelcomeInfo()
-        performAnimations()
-    }
-    
     ///Hides info about using the app (such as "Pick your location").
     func hideWelcomeInfo()
     {
@@ -68,6 +62,11 @@ class WelcomeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
         }
     }
     
+    @IBAction func nextBtnPressed(_ sender: Any) {
+        hideWelcomeInfo()
+        performAnimations()
+    }
+    
     @IBAction func chooseBtnPressed(_ sender: Any) {
         uniPickerView.isHidden = false
         uniPickerView.layer.opacity = 0
@@ -94,14 +93,14 @@ class WelcomeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return DataService.instance.getUniversities().count
+        return DataBaseHandler.instance.getUniversities().count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return DataService.instance.getUniversities()[row]
+        return DataBaseHandler.instance.getUniversities()[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        chooseUniView.selectUniversity(name: DataService.instance.getUniversities()[row])
+        chooseUniView.selectUniversity(name: DataBaseHandler.instance.getUniversities()[row])
     }
 }

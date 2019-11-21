@@ -42,7 +42,7 @@ class EventCell: UITableViewCell {
         
         handleEmptyText()
         
-        midView.backgroundColor = DataService.instance.getRandomColor()
+        midView.backgroundColor = DataBaseHandler.instance.getRandomColor()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

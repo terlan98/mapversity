@@ -9,9 +9,12 @@
 import Foundation
 import UIKit
 
-class DataService {
+///This class is meant to be handling database related tasks. For now, we do not have a database and therefore this class is full of some dummy data.
+class DataBaseHandler {
     
-    static let instance = DataService()
+    static let instance = DataBaseHandler()
+    
+    private var locations = ["Lobby A","A101","A102","A103","A104","A105","A201","A202","A203"]
     
     private var universities = ["ADA University", "Azerbaijan State Oil and Industry University", "Azerbaijan State University of Economics", "Baku Engineering University", "Baku Higher Oil School"]//For debugging only
     
@@ -19,6 +22,10 @@ class DataService {
     
     func getUniversities() -> [String] {
         return universities
+    }
+    
+    func getLocations() -> [String] {
+        return locations
     }
     
     func getRandomColor() -> UIColor {

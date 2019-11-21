@@ -21,7 +21,7 @@ class LocationSelectionVC: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var locationTableView: UITableView!
     
     var currentState: State = .idle //keeps track of which txt field is active (if any)
-    var locations = ["Lobby A","A101","A102","A103","A104","A105","A201","A202","A203"]
+    var locations = [""]
     var locationsToShow = [""]
     
     override func viewDidLoad() {
@@ -32,6 +32,7 @@ class LocationSelectionVC: UIViewController, UITableViewDelegate, UITableViewDat
         destinationTxtField.delegate = self
         currentLocationTxtField.delegate = self
         
+        locations = DataBaseHandler.instance.getLocations()
         locationsToShow = locations
     }
     

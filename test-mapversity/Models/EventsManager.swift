@@ -19,12 +19,39 @@ class EventsManager {
     Event(name: "IT Project Management Class", time: "10:00", location: "A201", note: ""),
     ]
     
-    func createEvent(name: String, time: String, location: String, note: String = "") {
-        events.append(Event(name: name, time: time, location: location, note: note))
+    ///Saves existing events to UserDefaults
+    func save() {
+        do {
+            let data = try NSKeyedArchiver.archivedData(withRootObject: events, requiringSecureCoding: false)
+            UserDefaults.standard.set(data, forKey: "savedEvents")
+        } catch {
+            print("Couldn't save events to UserDefaults.")
+        }
     }
     
+    ///Updates the event list from UserDefaults
+    func update() {
+        let decoded = UserDefaults.standard.object(forKey: "savedEvents") as! Data
+        
+        do{
+            if let loadedEvents = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decoded) as? [Event] {
+            events = loadedEvents
+            }
+        } catch {
+            print("Couldn't load events from UserDefaults.")
+        }
+    }
+    
+    ///Creates and saves a new event
+    func createEvent(name: String, time: String, location: String, note: String = "") {
+        events.append(Event(name: name, time: time, location: location, note: note))
+        save()
+    }
+    
+    ///Removes an event and saves the current events
     func removeEvent(at index: Int) {
         events.remove(at: index)
+        save()
     }
     
     func getEvents() -> [Event] {

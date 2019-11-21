@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EventVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class EventVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDelegate,  UIPickerViewDataSource {
 
     enum Mode: String {
         case add //user tapped the + button and is adding a new event
@@ -25,7 +25,10 @@ class EventVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var noteTxtField: UITextField!
     @IBOutlet weak var cancelBtn: UIButton!
     
+    let locationPickerView = UIPickerView()
+    
     var currentMode: Mode = .idle
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +37,12 @@ class EventVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         eventTableView.dataSource = self
         
         customize()
+        
+        locationPickerView.delegate = self
+        locationPickerView.dataSource = self
+        placeTxtField.inputView = locationPickerView
+        
+        EventsManager.instance.update()
     }
     
     func customize() {
@@ -138,7 +147,26 @@ class EventVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     //------------------------------------------------------------------------
+    //------------------------UIPickerView functions------------------------
     
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return DataBaseHandler.instance.getLocations().count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return DataBaseHandler.instance.getLocations()[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        placeTxtField.text = DataBaseHandler.instance.getLocations()[row]
+    }
+    
+    //------------------------------------------------------------------------
+
     @IBAction func plusBtnPressed(_ sender: Any) {
         switchMode()
         
