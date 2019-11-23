@@ -31,8 +31,11 @@ class EventsManager {
     
     ///Updates the event list from UserDefaults
     func update() {
-        let decoded = UserDefaults.standard.object(forKey: "savedEvents") as! Data
-                
+        guard let decoded = UserDefaults.standard.object(forKey: "savedEvents") as? Data else {
+            print("No saved events. Loading dummy data...")
+            return
+        }
+        
         do{
             if let loadedEvents = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decoded) as? [Event] {
             events = loadedEvents
