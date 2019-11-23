@@ -44,19 +44,19 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="TWS-kI-ZRY">
                                                             <rect key="frame" x="15" y="20" width="272" height="107.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intro to Software Engineering Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzT-xg-tsK">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Intro to Software Engineering Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzT-xg-tsK">
                                                                     <rect key="frame" x="0.0" y="0.0" width="272" height="21.5"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUr-Rf-Zin">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="13:15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUr-Rf-Zin">
                                                                     <rect key="frame" x="0.0" y="45.5" width="40.5" height="19"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A201" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNj-WO-a5u">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="A201" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNj-WO-a5u">
                                                                     <rect key="frame" x="0.0" y="88.5" width="37" height="19"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                                                     <nil key="textColor"/>
@@ -102,22 +102,22 @@
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5t3-ow-zcZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="250" height="31.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8JI-ZK-3O5">
                                                 <rect key="frame" x="0.0" y="56.5" width="250" height="31"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Place" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZTT-0E-vqb">
                                                 <rect key="frame" x="0.0" y="112.5" width="250" height="31.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Notes" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="if6-5h-c3m">
                                                 <rect key="frame" x="0.0" y="169" width="250" height="31"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
@@ -142,18 +142,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgP-XK-oK1">
-                                        <rect key="frame" x="161.5" y="41" width="52.5" height="21.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                        <rect key="frame" x="166" y="41" width="43.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blo-6c-x7G">
-                                        <rect key="frame" x="325" y="36" width="30" height="32"/>
+                                        <rect key="frame" x="337" y="34" width="18" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="JK3-Wd-8Zf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="+">
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" image="plus" catalog="system">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -161,12 +162,13 @@
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJ2-T9-Bft">
-                                        <rect key="frame" x="20" y="36" width="66" height="32"/>
+                                        <rect key="frame" x="20" y="34" width="15.5" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="D5L-hS-YvC"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="CANCEL">
+                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="multiply" catalog="system">
                                             <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -206,7 +208,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aqL-CS-sm7"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar1" id="pyO-2J-uRq"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="pyO-2J-uRq"/>
                     <connections>
                         <outlet property="blurView" destination="KiA-LD-ezY" id="ziP-ym-Ozs"/>
                         <outlet property="cancelBtn" destination="LJ2-T9-Bft" id="vbQ-Uo-PUa"/>
@@ -268,7 +270,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3ye-IB-4OC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Study" image="hat" id="X4r-u2-k71">
+                    <tabBarItem key="tabBarItem" title="Study" image="studentdesk" catalog="system" id="X4r-u2-k71">
                         <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                 </viewController>
@@ -313,8 +315,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArK-Kp-ZJV" customClass="SearchBarView" customModule="Mapversity" customModuleProvider="target">
                                 <rect key="frame" x="16" y="529" width="347" height="43"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ehd-W3-n6B">
-                                        <rect key="frame" x="0.0" y="6" width="42" height="32"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ehd-W3-n6B">
+                                        <rect key="frame" x="0.0" y="7" width="42" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="TzR-Qy-ryG"/>
                                             <constraint firstAttribute="width" constant="42" id="c7n-EY-VDn"/>
@@ -359,7 +361,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Navigate" image="navigation" id="gKm-wb-IoL">
+                    <tabBarItem key="tabBarItem" title="Navigate" image="location.north.fill" catalog="system" id="gKm-wb-IoL">
                         <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
@@ -610,8 +612,8 @@
                                                     <rect key="frame" x="10" y="5" width="355" height="50"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rD6-gT-K6t">
-                                                            <rect key="frame" x="20" y="15" width="42" height="20"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                            <rect key="frame" x="20" y="17.5" width="32" height="15.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -685,12 +687,14 @@
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPG-24-187">
-                                        <rect key="frame" x="10" y="45" width="18" height="18"/>
+                                        <rect key="frame" x="10" y="45" width="25" height="25"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="18" id="56n-R7-7WN"/>
-                                            <constraint firstAttribute="width" constant="18" id="FWK-7d-rIR"/>
+                                            <constraint firstAttribute="height" constant="25" id="56n-R7-7WN"/>
+                                            <constraint firstAttribute="width" constant="25" id="FWK-7d-rIR"/>
                                         </constraints>
-                                        <state key="normal" image="leftArrow">
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" image="arrow.left" catalog="system">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
@@ -743,18 +747,20 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.left" catalog="system" width="64" height="48"/>
         <image name="builder" width="512" height="512"/>
-        <image name="calendar1" width="30" height="33"/>
+        <image name="calendar" catalog="system" width="64" height="52"/>
         <image name="destIcon" width="130" height="130"/>
         <image name="downArrow" width="62" height="28"/>
-        <image name="hat" width="34.5" height="16"/>
-        <image name="leftArrow" width="512" height="512"/>
+        <image name="location.north.fill" catalog="system" width="54" height="64"/>
         <image name="lost" width="512" height="512"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="mapversityLogo" width="275" height="250"/>
-        <image name="navigation" width="22.5" height="27"/>
+        <image name="multiply" catalog="system" width="64" height="54"/>
         <image name="originIcon" width="120" height="120"/>
         <image name="pin1" width="512" height="512"/>
         <image name="pin2" width="512" height="512"/>
-        <image name="searchIcon" width="210" height="160"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
+        <image name="studentdesk" catalog="system" width="62" height="64"/>
     </resources>
 </document>
