@@ -206,9 +206,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aqL-CS-sm7"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar1" id="pyO-2J-uRq">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar1" id="pyO-2J-uRq"/>
                     <connections>
                         <outlet property="blurView" destination="KiA-LD-ezY" id="ziP-ym-Ozs"/>
                         <outlet property="cancelBtn" destination="LJ2-T9-Bft" id="vbQ-Uo-PUa"/>
@@ -271,7 +269,7 @@
                         <viewLayoutGuide key="safeArea" id="3ye-IB-4OC"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Study" image="hat" id="X4r-u2-k71">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
+                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebV-C7-dB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -306,9 +304,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvE-Ir-bPb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="680"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="667" id="SRb-fs-f6g"/>
+                                    <constraint firstAttribute="height" constant="680" id="SRb-fs-f6g"/>
                                 </constraints>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArK-Kp-ZJV" customClass="SearchBarView" customModule="Mapversity" customModuleProvider="target">
@@ -361,7 +360,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Navigate" image="navigation" id="gKm-wb-IoL">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
+                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="myMap" destination="dvE-Ir-bPb" id="4nm-of-ELs"/>
@@ -597,7 +596,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iKj-Ag-sac">
-                                <rect key="frame" x="0.0" y="218" width="375" height="449"/>
+                                <rect key="frame" x="0.0" y="198" width="375" height="469"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LCell" id="VT4-NR-XLH" customClass="LocationCell" customModule="Mapversity" customModuleProvider="target">
@@ -639,57 +638,57 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqN-uQ-C7f" customClass="TopBarView" customModule="Mapversity" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="originIcon" translatesAutoresizingMaskIntoConstraints="NO" id="zhk-SU-IwM">
-                                        <rect key="frame" x="30" y="70" width="32" height="32"/>
+                                        <rect key="frame" x="30" y="90" width="20" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="Uke-e0-zLQ"/>
-                                            <constraint firstAttribute="width" constant="32" id="ixZ-Zb-WQV"/>
+                                            <constraint firstAttribute="height" constant="20" id="Uke-e0-zLQ"/>
+                                            <constraint firstAttribute="width" constant="20" id="ixZ-Zb-WQV"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="destIcon" translatesAutoresizingMaskIntoConstraints="NO" id="VSt-aO-3JS">
-                                        <rect key="frame" x="30" y="150" width="32" height="32"/>
+                                        <rect key="frame" x="30" y="135" width="20" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="32" id="dIV-FX-Okj"/>
-                                            <constraint firstAttribute="height" constant="32" id="uFW-Qq-tC3"/>
+                                            <constraint firstAttribute="width" constant="20" id="dIV-FX-Okj"/>
+                                            <constraint firstAttribute="height" constant="20" id="uFW-Qq-tC3"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QeT-1V-gT5">
-                                        <rect key="frame" x="45.5" y="107" width="1" height="38"/>
+                                        <rect key="frame" x="39.5" y="115" width="1" height="15"/>
                                         <color key="backgroundColor" red="0.0" green="0.49631071090000001" blue="0.89082545040000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="38" id="08H-3J-NCR"/>
+                                            <constraint firstAttribute="height" constant="15" id="08H-3J-NCR"/>
                                             <constraint firstAttribute="width" constant="1" id="Dzi-Ft-irb"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Location" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="YJF-lg-98d" customClass="LocationTextField" customModule="Mapversity" customModuleProvider="target">
-                                        <rect key="frame" x="74" y="64.5" width="276" height="43"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Location" textAlignment="natural" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="YJF-lg-98d" customClass="LocationTextField" customModule="Mapversity" customModuleProvider="target">
+                                        <rect key="frame" x="62" y="85" width="288" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="43" id="Mlb-7p-Km0"/>
+                                            <constraint firstAttribute="height" constant="30" id="Mlb-7p-Km0"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                         <connections>
                                             <action selector="txtFieldChanged:" destination="Tny-9i-rZ1" eventType="editingChanged" id="AbB-KJ-T5R"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Destination" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="YUh-7n-0DI" customClass="LocationTextField" customModule="Mapversity" customModuleProvider="target">
-                                        <rect key="frame" x="74" y="144.5" width="276" height="43"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Destination" textAlignment="natural" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="YUh-7n-0DI" customClass="LocationTextField" customModule="Mapversity" customModuleProvider="target">
+                                        <rect key="frame" x="62" y="130" width="288" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="43" id="cc9-zx-9qX"/>
+                                            <constraint firstAttribute="height" constant="30" id="cc9-zx-9qX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                         <connections>
                                             <action selector="txtFieldChanged:" destination="Tny-9i-rZ1" eventType="editingChanged" id="6nj-n8-cBw"/>
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPG-24-187">
-                                        <rect key="frame" x="10" y="30" width="24" height="24"/>
+                                        <rect key="frame" x="10" y="45" width="18" height="18"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="56n-R7-7WN"/>
-                                            <constraint firstAttribute="width" constant="24" id="FWK-7d-rIR"/>
+                                            <constraint firstAttribute="height" constant="18" id="56n-R7-7WN"/>
+                                            <constraint firstAttribute="width" constant="18" id="FWK-7d-rIR"/>
                                         </constraints>
                                         <state key="normal" image="leftArrow">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -703,16 +702,16 @@
                                 <constraints>
                                     <constraint firstItem="YUh-7n-0DI" firstAttribute="leading" secondItem="YJF-lg-98d" secondAttribute="leading" id="AUc-xe-K4o"/>
                                     <constraint firstItem="YJF-lg-98d" firstAttribute="leading" secondItem="zhk-SU-IwM" secondAttribute="trailing" constant="12" id="C4P-Vf-c8h"/>
-                                    <constraint firstItem="gPG-24-187" firstAttribute="top" secondItem="xqN-uQ-C7f" secondAttribute="top" constant="30" id="CQn-VW-AVA"/>
+                                    <constraint firstItem="gPG-24-187" firstAttribute="top" secondItem="xqN-uQ-C7f" secondAttribute="top" constant="45" id="CQn-VW-AVA"/>
                                     <constraint firstAttribute="trailing" secondItem="YJF-lg-98d" secondAttribute="trailing" constant="25" id="Ede-4v-oY4"/>
                                     <constraint firstItem="YUh-7n-0DI" firstAttribute="centerY" secondItem="VSt-aO-3JS" secondAttribute="centerY" id="Hgt-vd-qA2"/>
                                     <constraint firstItem="QeT-1V-gT5" firstAttribute="top" secondItem="zhk-SU-IwM" secondAttribute="bottom" constant="5" id="MAK-Fu-Y1e"/>
                                     <constraint firstItem="YUh-7n-0DI" firstAttribute="trailing" secondItem="YJF-lg-98d" secondAttribute="trailing" id="MNI-Xr-SrC"/>
                                     <constraint firstItem="VSt-aO-3JS" firstAttribute="centerX" secondItem="zhk-SU-IwM" secondAttribute="centerX" id="W9Z-7X-4QS"/>
                                     <constraint firstItem="gPG-24-187" firstAttribute="leading" secondItem="xqN-uQ-C7f" secondAttribute="leading" constant="10" id="ZdH-KG-3K2"/>
-                                    <constraint firstAttribute="height" constant="210" id="hS5-DA-hWg"/>
+                                    <constraint firstAttribute="height" constant="190" id="hS5-DA-hWg"/>
                                     <constraint firstItem="VSt-aO-3JS" firstAttribute="top" secondItem="QeT-1V-gT5" secondAttribute="bottom" constant="5" id="mxw-mT-zD2"/>
-                                    <constraint firstItem="zhk-SU-IwM" firstAttribute="top" secondItem="xqN-uQ-C7f" secondAttribute="top" constant="70" id="pf4-hP-QJn"/>
+                                    <constraint firstItem="zhk-SU-IwM" firstAttribute="top" secondItem="xqN-uQ-C7f" secondAttribute="top" constant="90" id="pf4-hP-QJn"/>
                                     <constraint firstItem="zhk-SU-IwM" firstAttribute="leading" secondItem="xqN-uQ-C7f" secondAttribute="leading" constant="30" id="rsZ-hO-vvy"/>
                                     <constraint firstItem="QeT-1V-gT5" firstAttribute="centerX" secondItem="zhk-SU-IwM" secondAttribute="centerX" id="wR7-pd-YuL"/>
                                     <constraint firstItem="YJF-lg-98d" firstAttribute="centerY" secondItem="zhk-SU-IwM" secondAttribute="centerY" id="wT7-WZ-qNo"/>
@@ -740,7 +739,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9M-cz-mgB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-745" y="591"/>
+            <point key="canvasLocation" x="-746.39999999999998" y="590.55472263868069"/>
         </scene>
     </scenes>
     <resources>

@@ -32,7 +32,7 @@ class MapVC: UIViewController {
 //        let circle = MKCircle(center: CLLocationCoordinate2DMake(initialLocation.coordinate.latitude, initialLocation.coordinate.longitude), radius: 20)
 //        myMap.addOverlay(circle)
         
-        drawCampusOverlay(width: 1040, height: 800)
+        drawCampusOverlay(width: 4371.5, height: 2461.5)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -86,7 +86,7 @@ extension MapVC: MKMapViewDelegate {
 //            return circleRenderer
 //        }
         if overlay is CampusOverlay {
-            return CampusOverlayView(overlay: overlay, overlayImage: #imageLiteral(resourceName: "A-building"))
+            return CampusOverlayView(overlay: overlay, overlayImage: #imageLiteral(resourceName: "A2"))
         }
         return MKOverlayRenderer(overlay: overlay)
     }
