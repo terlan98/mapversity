@@ -12,6 +12,6 @@ class CustomTabBar: UITabBar {
     //Note: Font related customizations are inside AppDelegate.
         
     override func sizeThatFits(_ size: CGSize) -> CGSize { // Gives custom size to the tab bar
-        return CGSize(width: super.sizeThatFits(size).width, height: 87)
+        return CGSize(width: super.sizeThatFits(size).width, height: super.sizeThatFits(size).height)
     }
 }

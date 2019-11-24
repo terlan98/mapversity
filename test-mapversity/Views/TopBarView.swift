@@ -15,6 +15,6 @@ class TopBarView: UIView {
     }
         
     func customize() {
-        applyShadowAndRounding(shadowRadius: 4, shadowOffset: CGSize(width: 0, height: 1), shadowOpacity: 0.15, cornerRadius: 0)
+        applyShadowAndRounding(shadowRadius: 0, shadowOffset: CGSize(width: 0, height: 1), shadowOpacity: 0.05, cornerRadius: 0)
     }
 }
