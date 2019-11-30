@@ -66,6 +66,7 @@ class EventVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIP
         currentMode = (currentMode == .idle) ? .add : .idle
     }
     
+    ///Shows an alert to the user indicating that some information about the event is missing.
     func showEmptyTxtFieldError() {
         
         let alert = UIAlertController(title: "Error", message: "Please provide all of the required information about the new event", preferredStyle: .alert)
@@ -139,6 +140,7 @@ class EventVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIP
         return true
     }
 
+    ///Handles the left-swipe delete action.
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete) {
             eventTableView.beginUpdates()

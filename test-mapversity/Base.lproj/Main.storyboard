@@ -12,7 +12,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Calendar-->
+        <!--Events-->
         <scene sceneID="Vzo-Ic-j16">
             <objects>
                 <viewController id="5DX-F3-Zjf" customClass="EventVC" customModule="Mapversity" customModuleProvider="target" sceneMemberID="viewController">
@@ -211,7 +211,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aqL-CS-sm7"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="pyO-2J-uRq"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="calendar" catalog="system" id="pyO-2J-uRq"/>
                     <connections>
                         <outlet property="blurView" destination="KiA-LD-ezY" id="ziP-ym-Ozs"/>
                         <outlet property="cancelBtn" destination="LJ2-T9-Bft" id="vbQ-Uo-PUa"/>
@@ -351,14 +351,59 @@
                                     <constraint firstItem="qb6-s2-SdQ" firstAttribute="leading" secondItem="ehd-W3-n6B" secondAttribute="trailing" constant="8" id="zCZ-fd-nOs"/>
                                 </constraints>
                             </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wml-YT-smc">
+                                <rect key="frame" x="71.5" y="552" width="232" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="0.058823529411764705" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="0RZ-sG-VGa"/>
+                                    <constraint firstAttribute="width" constant="232" id="TBL-sn-ibs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mxk-JC-8qG"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEo-jI-7og">
+                                <rect key="frame" x="-13" y="54" width="139" height="48"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="OSt-lB-qQz"/>
+                                    <constraint firstAttribute="height" constant="48" id="eON-mb-WSl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="  CANCEL">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancelBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Og2-fj-8Wd"/>
+                                    <action selector="nextBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nxb-FV-RMI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ArK-Kp-ZJV" secondAttribute="bottom" constant="46" id="1dM-Zo-nZz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wml-YT-smc" secondAttribute="bottom" constant="18" id="Bti-D6-Id0"/>
+                            <constraint firstItem="lEo-jI-7og" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-13" id="F32-Ra-lgu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ArK-Kp-ZJV" secondAttribute="trailing" constant="12" id="Kdc-Yr-2WX"/>
+                            <constraint firstItem="Wml-YT-smc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LeO-p0-FFk"/>
                             <constraint firstItem="dvE-Ir-bPb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RzP-rr-Brb"/>
                             <constraint firstItem="ArK-Kp-ZJV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="THZ-zr-JDl"/>
                             <constraint firstItem="dvE-Ir-bPb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VBa-IB-OoO"/>
+                            <constraint firstItem="lEo-jI-7og" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="mrf-8j-y5g"/>
                             <constraint firstAttribute="bottom" secondItem="dvE-Ir-bPb" secondAttribute="bottom" constant="50" id="n0d-8e-YeM"/>
                             <constraint firstItem="dvE-Ir-bPb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qJF-8n-5AX"/>
                         </constraints>
@@ -370,13 +415,16 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="cancelBtn" destination="lEo-jI-7og" id="Cka-aJ-8YF"/>
                         <outlet property="myMap" destination="dvE-Ir-bPb" id="4nm-of-ELs"/>
+                        <outlet property="nextBtn" destination="Wml-YT-smc" id="Ab1-1F-hxq"/>
+                        <outlet property="searchBarView" destination="ArK-Kp-ZJV" id="ckY-6g-XxV"/>
                         <segue destination="cwE-s4-YoG" kind="show" identifier="onboardingVC" id="lZc-U8-RaP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1367" y="-282"/>
+            <point key="canvasLocation" x="-1367.2" y="-282.00899550224892"/>
         </scene>
         <!--WelcomeVC-->
         <scene sceneID="ozb-nG-0g9">
