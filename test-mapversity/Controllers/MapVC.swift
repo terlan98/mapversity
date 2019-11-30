@@ -86,7 +86,7 @@ extension MapVC: MKMapViewDelegate {
 //            return circleRenderer
 //        }
         if overlay is CampusOverlay {
-            return CampusOverlayView(overlay: overlay, overlayImage: #imageLiteral(resourceName: "A2"))
+            return CampusOverlayView(overlay: overlay, overlayImage: #imageLiteral(resourceName: "mapImage"))
         }
         return MKOverlayRenderer(overlay: overlay)
     }

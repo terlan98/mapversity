@@ -88,6 +88,7 @@ class EventVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIP
                 self.blurView.alpha = 1
                 self.newEventView.alpha = 1
             }) { (nil) in
+                self.upperRightBtn.setImage(nil, for: .normal)
                 self.upperRightBtn.setTitle("DONE", for: .normal)
                 self.upperRightBtn.titleLabel?.font = UIFont.systemFont(ofSize: 17)
                 
@@ -105,7 +106,8 @@ class EventVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIP
                 self.newEventView.isHidden = true
                 self.cancelBtn.isHidden = true
                 
-                self.upperRightBtn.setTitle("+", for: .normal)
+                self.upperRightBtn.setTitle("", for: .normal)
+                self.upperRightBtn.setImage(UIImage(systemName: "plus"), for: .normal)
                 self.upperRightBtn.titleLabel?.font = UIFont.systemFont(ofSize: 40)
                 
                 self.clearTxtFields()
