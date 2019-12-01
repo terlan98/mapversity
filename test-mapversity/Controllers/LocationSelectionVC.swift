@@ -8,6 +8,14 @@
 
 import UIKit
 
+protocol LocationSelectorDelegate {
+    /**
+     Called when the user selects the source and destionation points and wants to start the navigation.
+     [This function's actual implementation should use Location objects as argument. However, I skipped it for the prototype]
+     */
+    func didSelectLocation()
+}
+
 class LocationSelectionVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     enum State: String {
@@ -15,6 +23,8 @@ class LocationSelectionVC: UIViewController, UITableViewDelegate, UITableViewDat
         case currentLocation //user has activated currentLocationTxtField
         case destination //user has activated destinationTxtField
     }
+    
+    var delegate: LocationSelectorDelegate? = nil
     
     @IBOutlet weak var currentLocationTxtField: LocationTextField!
     @IBOutlet weak var destinationTxtField: LocationTextField!
@@ -49,7 +59,7 @@ class LocationSelectionVC: UIViewController, UITableViewDelegate, UITableViewDat
     ///Passes the selected points to the previous VC and dismisses itself.
     func startNavigation(alert: UIAlertAction!)
     {
-        //TODO: Pass selected points to the previous VC
+        delegate?.didSelectLocation()
         
         dismiss(animated: true, completion: nil)
     }

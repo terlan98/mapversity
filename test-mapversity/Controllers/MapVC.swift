@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class MapVC: UIViewController {
+class MapVC: UIViewController, LocationSelectorDelegate {
 
     @IBOutlet weak var myMap: MKMapView!
     @IBOutlet weak var searchBarView: SearchBarView!
@@ -41,14 +41,15 @@ class MapVC: UIViewController {
         
         drawCampusOverlay(width: 4371.5, height: 2461.5)
         
-//        switchToNavigationMode() //DEBUG ONLY
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if(false)//DEBUG ONLY: Change it to false if you do not want to see the welcome screen
+        if(welcomeVCShown)//DEBUG ONLY: Change it to false if you do not want to see the welcome screen
         {
             showOnboarding()
             welcomeVCShown = true
+            
+            centerMapOnLocation(location: initialLocation)
         }
     }
     
@@ -135,6 +136,16 @@ class MapVC: UIViewController {
     
     func showOnboarding(){
         performSegue(withIdentifier: "onboardingVC", sender: self)
+    }
+    
+    func didSelectLocation() {
+        switchToNavigationMode()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let nextVC = segue.destination as? LocationSelectionVC {
+            nextVC.delegate = self
+        }
     }
     
     @IBAction func nextBtnPressed(_ sender: Any) {
