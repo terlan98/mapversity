@@ -85,6 +85,7 @@ class MapVC: UIViewController, LocationSelectorDelegate {
         
         if(map.connectables.count == focusIndex) {
             returnFromNavigationMode()
+            focusIndex = 1
             return
         }
         
