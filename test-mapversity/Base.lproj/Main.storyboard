@@ -301,10 +301,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvE-Ir-bPb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArK-Kp-ZJV" customClass="SearchBarView" customModule="Mapversity" customModuleProvider="target">
                                 <rect key="frame" x="19" y="518.5" width="337.5" height="37.5"/>
                                 <subviews>
@@ -377,9 +373,6 @@
                             <constraint firstItem="lEo-jI-7og" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="0.4" id="2Kt-n9-RCq"/>
                             <constraint firstItem="Wml-YT-smc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5VF-OX-Kzb"/>
                             <constraint firstItem="lEo-jI-7og" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.1" id="GOX-c2-gPZ"/>
-                            <constraint firstItem="dvE-Ir-bPb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gt2-Fm-zO0"/>
-                            <constraint firstItem="dvE-Ir-bPb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ItP-uc-FtW"/>
-                            <constraint firstItem="dvE-Ir-bPb" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="M31-cb-8tm"/>
                             <constraint firstItem="ArK-Kp-ZJV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Mnr-AI-1le"/>
                             <constraint firstItem="Wml-YT-smc" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.1" id="OzR-Qo-Yyv"/>
                             <constraint firstItem="ArK-Kp-ZJV" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.1" id="TSK-rL-AsT"/>
@@ -389,7 +382,6 @@
                             <constraint firstItem="Wml-YT-smc" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.6" id="dQk-mO-wyu"/>
                             <constraint firstItem="Wml-YT-smc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="0.95" id="i5x-6B-rZb"/>
                             <constraint firstItem="lEo-jI-7og" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.2" id="jQc-2q-rz0"/>
-                            <constraint firstItem="dvE-Ir-bPb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="nAf-PC-0cT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -400,7 +392,6 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="cancelBtn" destination="lEo-jI-7og" id="Cka-aJ-8YF"/>
-                        <outlet property="myMap" destination="dvE-Ir-bPb" id="4nm-of-ELs"/>
                         <outlet property="nextBtn" destination="Wml-YT-smc" id="Ab1-1F-hxq"/>
                         <outlet property="searchBarView" destination="ArK-Kp-ZJV" id="ckY-6g-XxV"/>
                         <segue destination="cwE-s4-YoG" kind="show" identifier="onboardingVC" id="lZc-U8-RaP"/>
