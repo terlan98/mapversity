@@ -300,6 +300,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvE-Ir-bPb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArK-Kp-ZJV" customClass="SearchBarView" customModule="Mapversity" customModuleProvider="target">
                                 <rect key="frame" x="19" y="518.5" width="337.5" height="37.5"/>
                                 <subviews>
@@ -391,6 +396,7 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="cancelBtn" destination="lEo-jI-7og" id="Cka-aJ-8YF"/>
+                        <outlet property="myMap" destination="dvE-Ir-bPb" id="4nm-of-ELs"/>
                         <outlet property="nextBtn" destination="Wml-YT-smc" id="Ab1-1F-hxq"/>
                         <outlet property="searchBarView" destination="ArK-Kp-ZJV" id="ckY-6g-XxV"/>
                         <segue destination="cwE-s4-YoG" kind="show" identifier="onboardingVC" id="lZc-U8-RaP"/>
