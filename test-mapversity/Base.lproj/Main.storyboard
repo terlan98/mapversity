@@ -44,19 +44,19 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="TWS-kI-ZRY">
                                                             <rect key="frame" x="15" y="20" width="272" height="107.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Intro to Software Engineering Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzT-xg-tsK">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intro to Software Engineering Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzT-xg-tsK">
                                                                     <rect key="frame" x="0.0" y="0.0" width="272" height="21.5"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="13:15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUr-Rf-Zin">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUr-Rf-Zin">
                                                                     <rect key="frame" x="0.0" y="45.5" width="40.5" height="19"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="A201" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNj-WO-a5u">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A201" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNj-WO-a5u">
                                                                     <rect key="frame" x="0.0" y="88.5" width="37" height="19"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                                                     <nil key="textColor"/>
@@ -300,9 +300,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvE-Ir-bPb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvE-Ir-bPb">
+                                <rect key="frame" x="0.0" y="-24.5" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArK-Kp-ZJV" customClass="SearchBarView" customModule="Mapversity" customModuleProvider="target">
@@ -379,6 +378,8 @@
                             <constraint firstItem="lEo-jI-7og" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.1" id="GOX-c2-gPZ"/>
                             <constraint firstItem="ArK-Kp-ZJV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Mnr-AI-1le"/>
                             <constraint firstItem="Wml-YT-smc" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.1" id="OzR-Qo-Yyv"/>
+                            <constraint firstItem="dvE-Ir-bPb" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="PBP-T6-6bG"/>
+                            <constraint firstItem="dvE-Ir-bPb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="PxI-45-kdC"/>
                             <constraint firstItem="ArK-Kp-ZJV" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.1" id="TSK-rL-AsT"/>
                             <constraint firstItem="ArK-Kp-ZJV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="0.9" id="ViS-HM-yQE"/>
                             <constraint firstItem="ArK-Kp-ZJV" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.9" id="XPM-Lz-6d9"/>
@@ -386,6 +387,8 @@
                             <constraint firstItem="Wml-YT-smc" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.6" id="dQk-mO-wyu"/>
                             <constraint firstItem="Wml-YT-smc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="0.95" id="i5x-6B-rZb"/>
                             <constraint firstItem="lEo-jI-7og" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.2" id="jQc-2q-rz0"/>
+                            <constraint firstItem="dvE-Ir-bPb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="lnZ-P9-HL2"/>
+                            <constraint firstItem="dvE-Ir-bPb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="md1-ud-vFI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
