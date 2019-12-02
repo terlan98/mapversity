@@ -148,7 +148,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blo-6c-x7G">
-                                        <rect key="frame" x="336.5" y="19.5" width="18.5" height="19"/>
+                                        <rect key="frame" x="337" y="19.5" width="18" height="19"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <state key="normal" image="plus" catalog="system">
@@ -198,7 +198,6 @@
                             <constraint firstItem="gDU-AW-bRt" firstAttribute="leading" secondItem="aqL-CS-sm7" secondAttribute="leading" id="WO6-aS-J57"/>
                             <constraint firstItem="gDU-AW-bRt" firstAttribute="top" secondItem="kQ9-5W-dQ2" secondAttribute="bottom" id="bek-PR-djl"/>
                             <constraint firstItem="LJ2-T9-Bft" firstAttribute="height" secondItem="aqL-CS-sm7" secondAttribute="width" multiplier="0.05" id="c6F-cf-TAd"/>
-                            <constraint firstItem="blo-6c-x7G" firstAttribute="width" secondItem="aqL-CS-sm7" secondAttribute="width" multiplier="0.05" id="dh3-8G-oMZ"/>
                             <constraint firstItem="kQ9-5W-dQ2" firstAttribute="top" secondItem="aqL-CS-sm7" secondAttribute="top" id="fYV-7W-CRc"/>
                             <constraint firstItem="KiA-LD-ezY" firstAttribute="width" secondItem="gDU-AW-bRt" secondAttribute="width" id="k1B-dH-jRy"/>
                             <constraint firstItem="I19-OH-M3e" firstAttribute="top" secondItem="kQ9-5W-dQ2" secondAttribute="bottom" id="on9-rL-QxW"/>
@@ -354,7 +353,7 @@
                                 <rect key="frame" x="19" y="43" width="112.5" height="37.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                <state key="normal" title="  CANCEL">
+                                <state key="normal" title="CANCEL">
                                     <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
