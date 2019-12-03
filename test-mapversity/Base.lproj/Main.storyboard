@@ -418,7 +418,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GM6-cl-uQG">
-                                <rect key="frame" x="131.5" y="266" width="187.5" height="258.5"/>
+                                <rect key="frame" x="131.5" y="226" width="187.5" height="242.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick your location" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo4-ol-81J">
                                         <rect key="frame" x="-30.5" y="39.5" width="283.5" height="14.5"/>
@@ -516,22 +516,22 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Mapversity " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6I6-Z7-qJ6">
-                                <rect key="frame" x="56.5" y="199" width="262.5" height="67"/>
+                                <rect key="frame" x="56.5" y="159" width="262.5" height="67"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapversityLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BJl-lZ-QKm">
-                                <rect key="frame" x="94" y="-13" width="187.5" height="187.5"/>
+                                <rect key="frame" x="103" y="1" width="169" height="150"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mapversity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POv-GH-E39">
-                                <rect key="frame" x="133" y="157" width="109" height="24"/>
+                                <rect key="frame" x="133" y="120.5" width="109" height="24"/>
                                 <fontDescription key="fontDescription" name="BonvenoCF-Light" family="BonvenoCF" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.40392156862745099" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdn-le-Keh">
-                                <rect key="frame" x="53" y="570" width="269" height="36"/>
+                                <rect key="frame" x="53" y="514" width="269" height="36"/>
                                 <color key="backgroundColor" red="0.0" green="0.49803921568627452" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="48c-tU-5JC"/>
@@ -549,7 +549,7 @@
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFW-gF-ndk" customClass="ChooseUniView" customModule="Mapversity" customModuleProvider="target">
-                                <rect key="frame" x="49.5" y="344" width="276" height="52"/>
+                                <rect key="frame" x="49.5" y="304" width="276" height="52"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your university" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8O-gE-4Zd">
                                         <rect key="frame" x="20" y="14" width="196" height="24"/>
@@ -606,7 +606,7 @@
                                 </connections>
                             </view>
                             <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rcz-ml-uar">
-                                <rect key="frame" x="0.0" y="401" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="361" width="375" height="216"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="216" id="Muj-vX-PWo"/>
@@ -626,13 +626,13 @@
                             <constraint firstItem="GM6-cl-uQG" firstAttribute="top" secondItem="6I6-Z7-qJ6" secondAttribute="bottom" id="LDJ-3a-clI"/>
                             <constraint firstItem="Qdn-le-Keh" firstAttribute="leading" secondItem="S8e-iP-NCS" secondAttribute="leading" constant="53" id="PvX-KZ-D0z"/>
                             <constraint firstItem="Pub-bi-PxG" firstAttribute="centerX" secondItem="S8e-iP-NCS" secondAttribute="centerX" multiplier="0.35" id="T8f-dy-WpI"/>
-                            <constraint firstItem="BJl-lZ-QKm" firstAttribute="height" secondItem="S8e-iP-NCS" secondAttribute="width" multiplier="0.5" id="XzF-zc-JUo"/>
+                            <constraint firstItem="BJl-lZ-QKm" firstAttribute="height" secondItem="S8e-iP-NCS" secondAttribute="width" multiplier="0.4" id="XzF-zc-JUo"/>
                             <constraint firstItem="rcz-ml-uar" firstAttribute="top" secondItem="mFW-gF-ndk" secondAttribute="bottom" constant="5" id="ZTB-hV-GuU"/>
                             <constraint firstItem="GM6-cl-uQG" firstAttribute="width" secondItem="S8e-iP-NCS" secondAttribute="width" multiplier="0.5" id="bF4-0V-4g2"/>
-                            <constraint firstItem="BJl-lZ-QKm" firstAttribute="width" secondItem="S8e-iP-NCS" secondAttribute="width" multiplier="0.5" id="eRa-Kv-G3r"/>
+                            <constraint firstItem="BJl-lZ-QKm" firstAttribute="width" secondItem="S8e-iP-NCS" secondAttribute="width" multiplier="0.45" id="eRa-Kv-G3r"/>
                             <constraint firstItem="rcz-ml-uar" firstAttribute="leading" secondItem="S8e-iP-NCS" secondAttribute="leading" id="gbq-uu-yoq"/>
                             <constraint firstItem="rcz-ml-uar" firstAttribute="trailing" secondItem="S8e-iP-NCS" secondAttribute="trailing" id="gmJ-bH-ELZ"/>
-                            <constraint firstItem="POv-GH-E39" firstAttribute="top" secondItem="BJl-lZ-QKm" secondAttribute="bottom" multiplier="0.9" id="kdO-rj-y0A"/>
+                            <constraint firstItem="POv-GH-E39" firstAttribute="top" secondItem="BJl-lZ-QKm" secondAttribute="bottom" multiplier="0.8" id="kdO-rj-y0A"/>
                             <constraint firstItem="6I6-Z7-qJ6" firstAttribute="centerX" secondItem="37Z-uC-jG2" secondAttribute="centerX" id="lZa-WI-M6S"/>
                             <constraint firstItem="mFW-gF-ndk" firstAttribute="top" secondItem="6I6-Z7-qJ6" secondAttribute="bottom" constant="78" id="nGX-Kw-IRq"/>
                             <constraint firstItem="S8e-iP-NCS" firstAttribute="trailing" secondItem="mFW-gF-ndk" secondAttribute="trailing" constant="49.5" id="pmM-Q3-6i3"/>
